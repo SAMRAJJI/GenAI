@@ -36,7 +36,7 @@ file = st.file_uploader("upload the image", type=["jpg", "jpeg"])
 image = ""
 if file is not None:
     image = Image.open(file)
-    st.image(image,caption="uploaded Image", use_column_width=True)
+    st.image(image,caption="uploaded Image", width="stretch")
     
 submit = st.button("tell me about the total calories")
 
